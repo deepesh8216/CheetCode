@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
+import VideoSection from "@/components/sections/VideoSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import FAQSection from "@/components/sections/FAQSection";
 import DownloadSection from "@/components/sections/DownloadSection";
@@ -22,6 +23,7 @@ const Index = () => {
           <>
             <HeroSection />
             <ProductShowcase />
+            <VideoSection />
             <FeaturesSection />
             <FAQSection />
           </>

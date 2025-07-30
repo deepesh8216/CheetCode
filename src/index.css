@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Design System - Luxury gradients, glassmorphism, and sophisticated color palette */
+
+@layer base {
+  :root {
+    /* Premium Background System - Luxury Dark */
+    --background: 220 15% 6%;
+    --foreground: 210 40% 98%;
+    
+    /* Glass morphism backgrounds */
+    --glass-background: 220 15% 10% / 0.85;
+    --glass-border: 220 25% 20% / 0.4;
+    
+    /* Premium Card System */
+    --card: 220 15% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 15% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Premium Brand Colors - Luxury Gold/Purple */
+    --primary: 280 100% 70%;
+    --primary-glow: 290 100% 75%;
+    --primary-foreground: 220 15% 6%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 215.4 16.3% 70%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 25% 18%;
+    --input: 220 25% 18%;
+    --ring: 280 100% 70%;
+
+    --radius: 1.5rem;
+    
+    /* Premium Gradients - Luxury */
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 70%), hsl(320 100% 75%), hsl(45 100% 70%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(280 100% 15%) 0%, hsl(220 15% 6%) 50%, hsl(220 15% 4%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 12%) 0%, hsl(220 25% 8%) 50%, hsl(280 30% 10%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(280 100% 70%) 0%, hsl(320 100% 75%) 25%, hsl(45 100% 70%) 50%, hsl(280 100% 70%) 75%, hsl(320 100% 75%) 100%);
+    
+    /* Premium Shadows - Enhanced Luxury Glow */
+    --shadow-glow: 0 0 80px hsl(280 100% 70% / 0.6), 0 0 120px hsl(320 100% 75% / 0.3), 0 0 160px hsl(45 100% 70% / 0.2);
+    --shadow-card: 0 25px 60px hsl(220 15% 4% / 0.6), 0 0 40px hsl(280 100% 70% / 0.1);
+    --shadow-button: 0 10px 40px hsl(280 100% 70% / 0.7), 0 0 25px hsl(320 100% 75% / 0.4);
+    --shadow-luxury: 0 0 100px hsl(280 100% 70% / 0.4), 0 0 200px hsl(320 100% 75% / 0.2);
+    
+    /* Animation Easing */
+    --ease-premium: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-luxury: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .light {
+    /* Light mode premium background system */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 6%;
+    
+    /* Glass morphism backgrounds for light mode */
+    --glass-background: 255 255 255 / 0.9;
+    --glass-border: 220 10% 85% / 0.4;
+    
+    /* Light mode card system */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 6%;
+
+    /* Premium brand colors for light mode */
+    --primary: 280 100% 60%;
+    --primary-glow: 290 100% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 4.8% 95.9%;
+    --secondary-foreground: 220 5.9% 10%;
+
+    --muted: 220 4.8% 95.9%;
+    --muted-foreground: 220 3.8% 46.1%;
+
+    --accent: 280 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 5.9% 90%;
+    --input: 220 5.9% 90%;
+    --ring: 280 100% 60%;
+
+    --radius: 1.5rem;
+    
+    /* Light mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 60%), hsl(320 100% 65%), hsl(45 100% 60%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(280 100% 97%) 0%, hsl(0 0% 100%) 50%, hsl(220 4.8% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 4.8% 97%) 50%, hsl(280 30% 97%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(280 100% 60%) 0%, hsl(320 100% 65%) 25%, hsl(45 100% 60%) 50%, hsl(280 100% 60%) 75%, hsl(320 100% 65%) 100%);
+    
+    /* Light mode shadows */
+    --shadow-glow: 0 0 60px hsl(280 100% 60% / 0.3), 0 0 100px hsl(320 100% 65% / 0.2);
+    --shadow-card: 0 25px 60px hsl(220 15% 6% / 0.1), 0 0 40px hsl(280 100% 60% / 0.05);
+    --shadow-button: 0 10px 30px hsl(280 100% 60% / 0.4);
+    --shadow-luxury: 0 0 80px hsl(280 100% 60% / 0.2), 0 0 160px hsl(320 100% 65% / 0.1);
+  }
+
+  .dark {
+    /* Dark mode premium background system - Deep Purple/Blue */
+    --background: 240 20% 4%;
+    --foreground: 210 40% 98%;
+    
+    /* Glass morphism backgrounds for dark mode */
+    --glass-background: 240 20% 8% / 0.85;
+    --glass-border: 240 25% 15% / 0.4;
+    
+    /* Dark mode card system */
+    --card: 240 20% 7%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 20% 7%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Premium brand colors for dark mode - Electric Blue/Cyan */
+    --primary: 200 100% 70%;
+    --primary-glow: 180 100% 75%;
+    --primary-foreground: 240 20% 4%;
+
+    --secondary: 240 25% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 25% 12%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 200 100% 70%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 25% 15%;
+    --input: 240 25% 15%;
+    --ring: 200 100% 70%;
+
+    --radius: 1.5rem;
+    
+    /* Dark mode gradients - Electric */
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 70%), hsl(180 100% 75%), hsl(160 100% 70%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(200 100% 15%) 0%, hsl(240 20% 4%) 50%, hsl(240 20% 2%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 25% 10%) 0%, hsl(240 30% 6%) 50%, hsl(200 30% 8%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(200 100% 70%) 0%, hsl(180 100% 75%) 25%, hsl(160 100% 70%) 50%, hsl(200 100% 70%) 75%, hsl(180 100% 75%) 100%);
+    
+    /* Dark mode shadows - Electric glow */
+    --shadow-glow: 0 0 80px hsl(200 100% 70% / 0.6), 0 0 120px hsl(180 100% 75% / 0.3), 0 0 160px hsl(160 100% 70% / 0.2);
+    --shadow-card: 0 25px 60px hsl(240 20% 2% / 0.6), 0 0 40px hsl(200 100% 70% / 0.1);
+    --shadow-button: 0 10px 40px hsl(200 100% 70% / 0.7), 0 0 25px hsl(180 100% 75% / 0.4);
+    --shadow-luxury: 0 0 100px hsl(200 100% 70% / 0.4), 0 0 200px hsl(180 100% 75% / 0.2);
+    
+    /* Sidebar colors for dark mode */
+    --sidebar-background: 240 20% 6%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 200 100% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 25% 12%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 25% 12%;
+    --sidebar-ring: 200 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-attachment: fixed;
+  }
+
+  /* Premium scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--primary)));
+  }
+}
+
+@layer components {
+  /* Premium glass effect */
+  .backdrop-blur-glass {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  /* Premium animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  .animate-luxury-pulse {
+    animation: luxury-pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Premium hover effects */
+  .hover-lift {
+    transition: all 0.3s var(--ease-luxury);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-luxury);
+  }
+
+  /* Premium text effects */
+  .text-luxury {
+    background: var(--gradient-luxury);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient 3s ease infinite;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary-glow) / 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(var(--primary) / 0.5); }
+  to { box-shadow: 0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--primary-glow) / 0.6); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes luxury-pulse {
+  0%, 100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Premium particle effects */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: hsl(var(--primary));
+  border-radius: 50%;
+  animation: particle-float 8s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}

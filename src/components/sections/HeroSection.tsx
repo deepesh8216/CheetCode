@@ -33,7 +33,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Title */}
-          <h1 className="text-6xl md:text-8xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-8xl font-bold leading-tight">
             <span className="text-foreground text-glow">If you're gonna</span>
             <br />
             <span className="text-luxury animate-gradient">

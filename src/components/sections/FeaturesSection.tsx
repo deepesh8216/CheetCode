@@ -61,7 +61,7 @@ const FeaturesSection = () => {
       
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-luxury animate-gradient">Powerful Features</h2>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-luxury">Powerful Features</h2>
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto font-light">
             Everything you need to enhance your productivity and get ahead in any situation.
           </p>
@@ -71,11 +71,11 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-8 bg-gradient-card rounded-2xl border border-primary/30 hover:border-primary/60 hover:shadow-luxury transition-all duration-500 hover-lift animate-glow"
+              className="group p-8 bg-gradient-card rounded-2xl border border-primary/30 hover:border-primary/60 hover:shadow-luxury transition-all duration-500 hover-lift"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-luxury rounded-2xl flex items-center justify-center shadow-luxury group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 animate-gradient">
+                <div className="w-16 h-16 bg-gradient-luxury rounded-2xl flex items-center justify-center shadow-luxury group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <feature.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
               </div>

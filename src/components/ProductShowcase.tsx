@@ -37,7 +37,7 @@ export const ProductShowcase = () => {
                     <img
                         src={appScreen}
                         alt="The product screenshot"
-                        className="mt-16 rounded-3xl border-4 border-primary/30 hover:border-primary/60 hover:shadow-luxury transition-all duration-500 hover-lift animate-glow"
+                        className="mt-16 rounded-1xl border-4 border-primary/30 hover:border-primary/60 hover:shadow-luxury transition-all duration-500 hover-lift animate-glow"
                         ref={appImage}
                     />
                 </motion.div>

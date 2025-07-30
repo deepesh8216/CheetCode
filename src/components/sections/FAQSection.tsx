@@ -42,12 +42,12 @@ const FAQSection = () => {
   return (
     <section className="py-32 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-1/3 left-0 w-80 h-80 bg-gradient-primary opacity-10 rounded-full blur-3xl animate-float"></div>
+      {/* <div className="absolute top-1/3 left-0 w-80 h-80 bg-gradient-primary opacity-10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-gradient-luxury opacity-10 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-      
+       */}
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-luxury animate-gradient">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-luxury">
             Frequently Asked Questions
           </h2>
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto font-light">
@@ -59,7 +59,7 @@ const FAQSection = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-card rounded-2xl border border-primary/30 overflow-hidden hover:shadow-luxury transition-all duration-500 group hover-lift animate-glow"
+              className="bg-gradient-card rounded-2xl border border-primary/30 overflow-hidden hover:shadow-luxury transition-all duration-500 group hover-lift"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <button

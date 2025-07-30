@@ -8,7 +8,8 @@ const faqData = [
   },
   {
     question: "Is this app really free?",
-    answer: "Completely free. Fully open source. No strings attached."
+    answer: "Nope. We charge for it — because CheatCode is the cheat code for your career.
+No ads, no fluff, just pure interview-crushing tools that work."
   },
   {
     question: "How does screen capture work? ",

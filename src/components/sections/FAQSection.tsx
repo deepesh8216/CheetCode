@@ -7,10 +7,9 @@ const faqData = [
     answer: "Yes! Auto-generates responses from screen and audio. Use Ctrl+Enter for manual input."
   },
   {
-    question: "Is this app really free?",
-    answer: "Nope. We charge for it — because CheatCode is the cheat code for your career.
-No ads, no fluff, just pure interview-crushing tools that work."
-  },
+  question: "Is this app really free?",
+  answer: "Nope. We charge for it — because CheatCode is the cheat code for your career.\nNo ads, no fluff, just pure interview-crushing tools that work."
+}, 
   {
     question: "How does screen capture work? ",
     answer: "Takes screenshots and audio, sends to Google Gemini API. Requires internet and API key."

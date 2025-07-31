@@ -7,7 +7,7 @@ const faqData = [
     answer: "Yes! Auto-generates responses from screen and audio. Use Ctrl+Enter for manual input."
   },
   {
-  question: "Is this app really free?",
+  question: "Is this app free?",
   answer: "Nope. We charge for it — because CheatCode is the cheat code for your career.\nNo ads, no fluff, just pure interview-crushing tools that work."
 }, 
   {

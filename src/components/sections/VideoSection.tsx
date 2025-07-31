@@ -16,24 +16,24 @@ const VideoSection = () => {
         </div>
 
         <div
-          className="rounded-sm border border-[#5dfbff]/40 overflow-hidden 
-                     shadow-[0_0_30px_rgba(93,251,255,0.6)]"
-        >
-          <video
-            ref={videoRef}
-            className="w-full h-auto rounded-xl"
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-            controlsList="nofullscreen"
-            poster="/CheatCode-Demo-Picture.png"
-          >
-            <source src="/CheatCode-Video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+  className="rounded-[6px] border border-[#5dfbff]/40 overflow-hidden 
+             shadow-[0_0_30px_rgba(93,251,255,0.6)]"
+>
+  <video
+    ref={videoRef}
+    className="w-full h-auto rounded-[6px]"
+    autoPlay
+    muted
+    loop
+    playsInline
+    controls
+    controlsList="nofullscreen"
+    poster="/CheatCode-Demo-Picture.png"
+  >
+    <source src="/CheatCode-Video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
       </div>
     </section>
   );

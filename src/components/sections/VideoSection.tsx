@@ -16,7 +16,7 @@ const VideoSection = () => {
         </div>
 
         <div
-          className="rounded-xl border border-[#5dfbff]/40 overflow-hidden 
+          className="rounded-sm border border-[#5dfbff]/40 overflow-hidden 
                      shadow-[0_0_30px_rgba(93,251,255,0.6)]"
         >
           <video

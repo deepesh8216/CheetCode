@@ -16,8 +16,8 @@ const VideoSection = () => {
         </div>
 
         <div
-  className="rounded-[6px] border border-[#5dfbff]/40 overflow-hidden 
-             shadow-[0_0_30px_rgba(93,251,255,0.6)]"
+  className="rounded-[6px] border border-primary/40 overflow-hidden 
+             shadow-glow hover:shadow-luxury transition-all duration-500"
 >
   <video
     ref={videoRef}

@@ -64,54 +64,54 @@
 
   .light {
     /* Light mode premium background system */
-    --background: 0 0% 100%;
-    --foreground: 220 15% 6%;
+    --background: 0 0% 99%;
+    --foreground: 220 20% 8%;
     
     /* Glass morphism backgrounds for light mode */
-    --glass-background: 255 255 255 / 0.9;
-    --glass-border: 220 10% 85% / 0.4;
+    --glass-background: 255 255 255 / 0.95;
+    --glass-border: 220 15% 80% / 0.6;
     
     /* Light mode card system */
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 6%;
+    --card: 0 0% 98%;
+    --card-foreground: 220 20% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 6%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 220 20% 8%;
 
     /* Premium brand colors for light mode */
-    --primary: 260 85% 45%;
-    --primary-glow: 270 90% 50%;
+    --primary: 250 100% 60%;
+    --primary-glow: 260 100% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 4.8% 95.9%;
-    --secondary-foreground: 220 5.9% 10%;
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 20% 15%;
 
-    --muted: 220 4.8% 95.9%;
-    --muted-foreground: 220 3.8% 46.1%;
+    --muted: 220 20% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 260 85% 45%;
+    --accent: 250 100% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 5.9% 90%;
-    --input: 220 5.9% 90%;
-    --ring: 260 85% 45%;
+    --border: 220 20% 88%;
+    --input: 220 20% 92%;
+    --ring: 250 100% 60%;
 
     --radius: 1.5rem;
     
     /* Light mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(260 85% 45%), hsl(280 70% 50%), hsl(45 85% 55%));
-    --gradient-hero: radial-gradient(ellipse at top, hsl(260 30% 96%) 0%, hsl(0 0% 100%) 50%, hsl(220 4.8% 98%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 4.8% 97%) 50%, hsl(260 20% 96%) 100%);
-    --gradient-luxury: linear-gradient(135deg, hsl(260 85% 45%) 0%, hsl(280 70% 50%) 25%, hsl(45 85% 55%) 50%, hsl(260 85% 45%) 75%, hsl(280 70% 50%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(250 100% 60%), hsl(280 100% 65%), hsl(320 100% 70%), hsl(45 100% 65%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(250 30% 97%) 0%, hsl(280 20% 98%) 30%, hsl(0 0% 99%) 70%, hsl(220 15% 97%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 99%) 0%, hsl(250 15% 97%) 30%, hsl(280 10% 96%) 70%, hsl(220 10% 95%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(250 100% 60%) 0%, hsl(280 100% 65%) 20%, hsl(320 100% 70%) 40%, hsl(45 100% 65%) 60%, hsl(250 100% 60%) 80%, hsl(280 100% 65%) 100%);
     
     /* Light mode shadows */
-    --shadow-glow: 0 0 40px hsl(260 85% 45% / 0.25), 0 0 80px hsl(280 70% 50% / 0.15);
-    --shadow-card: 0 25px 60px hsl(220 15% 6% / 0.08), 0 0 30px hsl(260 85% 45% / 0.04);
-    --shadow-button: 0 10px 25px hsl(260 85% 45% / 0.3);
-    --shadow-luxury: 0 0 60px hsl(260 85% 45% / 0.15), 0 0 120px hsl(280 70% 50% / 0.08);
+    --shadow-glow: 0 0 60px hsl(250 100% 60% / 0.3), 0 0 100px hsl(280 100% 65% / 0.2), 0 0 140px hsl(320 100% 70% / 0.1);
+    --shadow-card: 0 20px 50px hsl(220 20% 8% / 0.12), 0 10px 30px hsl(250 100% 60% / 0.08), 0 0 20px hsl(280 100% 65% / 0.05);
+    --shadow-button: 0 10px 30px hsl(250 100% 60% / 0.4), 0 5px 15px hsl(280 100% 65% / 0.2);
+    --shadow-luxury: 0 0 80px hsl(250 100% 60% / 0.2), 0 0 150px hsl(280 100% 65% / 0.12), 0 0 200px hsl(320 100% 70% / 0.08);
   }
 
   .dark {
